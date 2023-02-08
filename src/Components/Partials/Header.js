@@ -1,21 +1,22 @@
 import React from 'react'
 import logo from '../../Assets/users/jw.jpg';
 import './Header.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
       <nav className='main-nav-wrapper'>
           
           <div>
-                <Link to='/'> <img className='nav-logo' src={logo} alt='' /> </Link>
+                 <img className='nav-logo' src={logo} alt='' />
           </div>
 
               <ul className='main-nav-grp-links'>
-                  <li><Link to='/'> Home </Link></li>
-                  <li><Link to='/'> About Us </Link></li>
-                  <li><Link to='/'> Products </Link></li>
-                  <li><Link to='/'> Contacts </Link></li>
+                  <li><a href='/'> Home </a></li>
+                  <li><a href='/'> About Us </a></li>
+                  <li><a href='/'> Products </a></li>
+                  <li><a href='/'> Contact Us </a></li>
+                  
               </ul>
           
 

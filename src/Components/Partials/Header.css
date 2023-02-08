@@ -1,10 +1,13 @@
 .main-nav-wrapper{
-border: .5px solid red;
+/* border: .5px solid red; */
 display: flex;
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     justify-content: space-between;
     align-items: center;
     padding: .5rem 1rem;
+    box-shadow: 0 0 8px rgb(10,  119, 159);
+    background-color: rgba(10, 119, 159, 0.62);
+    color: white;
 }
 .nav-logo{
     border-radius: 50%;
@@ -15,8 +18,15 @@ display: flex;
 .main-nav-grp-links{
     display: flex;list-style: none;
     gap: 1rem;
+    
 }
 .main-nav-grp-links li a{
 text-decoration: none;
+cursor: pointer;
+border-radius: 1px;
+}
+.main-nav-grp-links li a:hover{
+    background-color: white;
+    text-decoration: underline;
 }
 
